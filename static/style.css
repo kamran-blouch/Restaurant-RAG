@@ -1,0 +1,33 @@
+#chat-container {
+    scrollbar-width: thin;
+    scrollbar-color: #b91c1c #f3f4f6;
+}
+
+#chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-container::-webkit-scrollbar-track {
+    background: #f3f4f6;
+}
+
+#chat-container::-webkit-scrollbar-thumb {
+    background-color: #b91c1c;
+    border-radius: 4px;
+}
+
+.message {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.user-message {
+    background-color: #fef2f2;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #f3f4f6;
+    text-align: left;
+}

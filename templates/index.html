@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Ristorante Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="bg-cover bg-center min-h-screen flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
+    <div class="bg-white bg-opacity-90 p-6 rounded-lg shadow-lg w-full max-w-lg">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-4">Welcome to Recipe Guide</h1>
+        <p class="text-center text-gray-600 mb-6">Ask our digital shef for delicious recipes!</p>
+        <div id="chat-container" class="bg-gray-100 p-4 rounded-lg h-80 overflow-y-auto mb-4">
+            <div id="chat-messages"></div>
+        </div>
+        <div class="flex">
+            <input id="user-input" type="text" class="flex-1 p-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="What recipe would you like to know about?">
+            <button id="send-button" class="bg-red-500 text-white p-2 rounded-r-lg hover:bg-red-600 focus:outline-none">Check</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
